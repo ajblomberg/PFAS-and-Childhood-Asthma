@@ -1,0 +1,11 @@
+"script","seconds"
+"01-flag-outcomes.R",77.25
+"02-create-cohort.R",1.69
+"03-cohort-description.R",1147.09
+"04-outcome-validation-against-primary.R",343.8
+"05-plot-KM.R",6.41000000000008
+"06-primary-and-sex-stratified-results.R",63.61
+"07-run-MICE.R",15715.89
+"08-MICE-models.R",15.5
+"09-RCM-matching.R",2.02999999999884
+"10-RCM-analysis.R",NA

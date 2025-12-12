@@ -1,0 +1,4 @@
+outcome;Sensitivity;Specificity;Positive Predictive Value;Negative Predictive Value
+Asthma;0,83;0,96;0,75;0,98
+Wheeze;0,76;0,93;0,70;0,95
+Asthma (3+);0,86;0,97;0,63;0,99

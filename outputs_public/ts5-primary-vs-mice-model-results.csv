@@ -1,0 +1,13 @@
+algorithm;exposure;event;pyears;unadj;adj
+wheeze;Background;1814;27318;NA;NA
+wheeze;High;112;1341;1.26 (1.02, 1.56);1.11 (0.9, 1.37)
+wheeze;Intermediate;295;4474;1 (0.88, 1.14);1 (0.87, 1.13)
+wheeze;Very High;39;530;1.11 (0.79, 1.55);0.98 (0.7, 1.37)
+asthma;Background;1759;105592;NA;NA
+asthma;High;98;5218;1.13 (0.9, 1.42);0.99 (0.78, 1.24)
+asthma;Intermediate;269;17473;0.94 (0.82, 1.07);0.93 (0.82, 1.07)
+asthma;Very High;51;2000;1.52 (1.14, 2.02);1.4 (1.05, 1.86)
+asthma3;Background;1294;110544;NA;NA
+asthma3;High;69;5530;1.07 (0.83, 1.39);0.96 (0.74, 1.25)
+asthma3;Intermediate;191;18311;0.9 (0.77, 1.06);0.9 (0.77, 1.05)
+asthma3;Very High;40;2125;1.6 (1.15, 2.21);1.51 (1.09, 2.09)
