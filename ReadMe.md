@@ -2,7 +2,7 @@
 
 This repository contains the analysis code for the manuscript:
 
-> **Prenatal exposure to perfluoroalkyl substance (PFAS) and incidence of asthma and wheeze in childhood: A cohort study in Ronneby, Sweden**  
+> **Prenatal exposure to perfluoroalkyl substances (PFAS) and incidence of asthma and wheeze in childhood: A cohort study in Ronneby, Sweden**  
 > Annelise J. Blomberg, Christel Nielsen, Beata Borgström Bolmsjö, Marie-Abèle Bind, Linda Hartman, Anna Saxne Jöud
 
 ## 1. Overview

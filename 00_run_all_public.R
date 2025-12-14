@@ -1,27 +1,38 @@
-# run_all.R
+# 00_run_all_public.R
 # Purpose: Run the full PFAS-asthma analysis in a fixed, documented order
-# How to use: source ("run_all.R") from the project root. 
-# Assumptions: numbered scripts live in ./code_public, outputs go to ./outputs_public. 
-
+# Usage: source ("00_run_all_public.R") 
 
 # 1. Basic run configuration -------------------------------------------------
 
 set.seed(1516)
 
-output_dir <- "outputs_public"
 code_dir <- "code_public"
+output_dir <- "outputs_public"
+
+if(!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
+
 log_path <- file.path(output_dir, "run_all.log")
 
 
-# 3. Plain-text run logger ------------------------------------------------
-# Send console output to a log file as well
+# 2. Start Log ------------------------------------------------
+
+# Open log connection 
 log_con <- file(log_path, open = "wt")
+
+# Route both stdout + messages into the log 
 sink(log_con, type = c("output", "message"), split = T)
 
-cat(sprintf("=== PFAS-asthma run started: %s === \n", Sys.time()))
-cat(sprintf("Logs: %s\n", normalizePath(log_path)), "\n")
+# Close sinks and connections, even if an error occurs mid-run:
+on.exit({
+  sink(type = "message")
+  sink(type = "output")
+  close(log_con)
+}, add = TRUE)
 
+# Write run header into log
+cat(sprintf("=== PFAS-asthma run started: %s === \n", Sys.time()))
 cat("Project root: ", normalizePath("."), "\n")
+cat(sprintf("Log file: %s\n", normalizePath(log_path)), "\n")
 cat("R version ", R.version.string, "\n\n")
 
 
@@ -82,6 +93,5 @@ cat("save run times to: ", timing_csv, "\n")
 
 cat(sprintf("\n== Run completed successfully: %s ===\n", Sys.time()))
 
-# Stop logging
-sink(type = "message"); sink(type = "output"); close(log_con)
+
 
