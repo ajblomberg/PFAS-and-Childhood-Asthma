@@ -6,4 +6,5 @@ date-released: "2025-12-12"
 authors:
   - family-names: Blomberg
     given-names: Annelise J.
-repository-code: "https://github.com/<username>/<repo-name>"
+repository-code: "https://github.com/ajblomberg/PFAS-and-Childhood-Asthma"
+doi: 10.5281/zenodo.17931667

@@ -1,4 +1,5 @@
 # Prenatal PFAS and Childhood Asthma – Analysis Code
+[![DOI](https://zenodo.org/badge/1115243929.svg)](https://doi.org/10.5281/zenodo.17931667)
 
 This repository contains the analysis code for the manuscript:
 
